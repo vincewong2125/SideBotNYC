@@ -157,4 +157,4 @@ async def stop(ctx):
     voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
     voice.stop()
     
-client.run(config.TOKEN)
+client.run("insert_your_token")
