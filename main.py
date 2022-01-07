@@ -3,6 +3,7 @@ from discord.ext import commands
 import youtube_dl
 import os
 import nest_asyncio
+import config
 nest_asyncio.apply()
 client = commands.Bot(command_prefix="!")
 
@@ -156,4 +157,4 @@ async def stop(ctx):
     voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
     voice.stop()
     
-client.run('OTI4NTQzOTc1NjM0MjY0MDc2.YdaT9w.VxSyp1gPiq-PmzjkvDYvYxOEEs0')
+client.run(config.TOKEN)
